@@ -1,14 +1,20 @@
-require 'yajl'
+require "rufus-json"
+require "json"
 
 module ElasticSearch
   module Encoding
     class JSON < Base
+      def initialize(*args)
+        Rufus::Json.detect_backend
+        super(*args)
+      end
+      
       def encode(object)
-        Yajl::Encoder.encode(object)
+        Rufus::Json.encode(object)
       end
 
       def decode(string)
-        Yajl::Parser.parse(string)
+        Rufus::Json.decode(string)
       end
 
       def is_encoded?(object)

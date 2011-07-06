@@ -2,15 +2,17 @@ PATH
   remote: .
   specs:
     rubberband (0.1.1)
+      json_pure
       patron
-      yajl-ruby
+      rufus-json
 
 GEM
   remote: http://rubygems.org/
   specs:
     diff-lcs (1.1.2)
+    json_pure (1.5.3)
     mocha (0.9.12)
-    patron (0.4.11)
+    patron (0.4.12)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
@@ -19,10 +21,10 @@ GEM
     rspec-expectations (2.5.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.5.0)
+    rufus-json (1.0.1)
     simplecov (0.4.1)
       simplecov-html (~> 0.4.3)
     simplecov-html (0.4.3)
-    yajl-ruby (0.8.2)
     yard (0.6.4)
 
 PLATFORMS

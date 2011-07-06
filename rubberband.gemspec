@@ -27,7 +27,8 @@ Gem::Specification.new do |s|
   s.licenses = ["Apache v2"]
 
   s.add_runtime_dependency("patron", [">= 0"])
-  s.add_runtime_dependency("yajl-ruby", [">= 0"])
+  s.add_runtime_dependency("rufus-json", [">= 0"])
+  s.add_runtime_dependency("json_pure", [">= 0"])
   s.add_development_dependency("rspec", ["~> 2.0"])
   s.add_development_dependency("yard", ["~> 0.6.0"])
   s.add_development_dependency("bundler", ["~> 1.0.0"])
